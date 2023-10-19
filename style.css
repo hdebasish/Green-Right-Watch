@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Navbar Section */
+
+.navebar {
+    background-color: rgb(247, 255, 243);
+}
+
+.navebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.menuitems {
+    /* margin-right: 0px; */
+    list-style-type: none;
+    cursor: pointer;
+
+
+}
+
+
+.menuitems span:hover {
+    color: green;
+}
+
+
+
+
+
+.menuitems span {
+    font-size: 23px;
+    margin-right: 50px;
+}
+
+.support{
+    list-style-type: none;
+    cursor: pointer;
+    color: green;
+}
+
+.support span{
+    color: green;
+    font-size: 23px;
+    margin-right: 50px;
+}
+
+.support span:hover{
+    color: gray;
+}
+
+.img-container img {
+
+
+    height: 100px;
+
+}
+
+.img-container {
+    margin-left: 50px;
+}
+
+
+/* Hero Section */
+
+.herocontainer {
+    position: relative;
+}
+
+.heroimage {
+
+    background-color: black;
+}
+
+.heroimage img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.herocontent {
+    width: 800px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.herocontent h1 {
+    color: rgb(247, 255, 243);
+}
+
+.herocontent h1:hover {
+    color: #47c117;
+    cursor: pointer;
+}
+
+.herocontent {
+    font-size: 25px;
+}
+
+.herounderline {
+
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 4px;
+    background-color: #47c117;
+}
+
+.herotimestamp {
+
+    margin-bottom: 30px;
+   
+}
+
+.herotimestamp p {
+    color: rgb(247, 255, 243);
+    font-size: x-large;
+}
+
+
+.herobutton {
+    font-size: larger;
+    background-color: transparent;
+    border: none;
+    border: 2px solid;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(247, 255, 243);
+}
+
+.herobutton:hover {
+    background-color: #47c117;
+    border: none;
+    transition: 500ms;
+
+}
+
+
+/* Map segment */
+
+.map iframe{
+    width: 100%;
+    height: 80vh;
+
+}
+
+
+.map h1{
+    margin-left: 20%;
+    text-align: right;
+    margin-right: 20%;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    border-right: 4px solid #47c117;;
+}
+
+.map h1:hover{
+    color: #47c117;
+    cursor: pointer;
+}
+
+.contents{
+    margin: auto;
+    /* margin-top: 15%; */
+    width: 100%;
+    
+}
+
+.category{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category span{
+    padding: 30px;
+    font-size: 23px;
+}
+
+.category span:hover{
+    color: #47c117;
+    cursor: pointer;
+}
+
+.wrappercategory{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgb(247, 255, 243);
+}
+
+.articles{
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.articles:nth-of-type(odd){
+    background-color: rgb(247, 255, 243);
+}
+
+.articles:nth-of-type(even){
+    background-color: white;
+}
+
+
+
+.articleheading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.articleimage{
+    background-color: black;
+
+    overflow: hidden;
+
+}
+
+.articleimage img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform .5s;
+    
+}
+
+.articleimage img:hover{
+    transform: scale(1.5);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.postedon{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.postedon i,span {
+    color: gray;
+}
+
+.readmore {
+    font-size: larger;
+    background-color: transparent;
+    border: none;
+    border: 2px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.readmore:hover {
+    background-color: #47c117;
+    border: none;
+    transition: 500ms;
+    color: white;
+
+}
+
+.tags{
+    display: flex;
+    color: #47c117;
+}
+
+.tags div{
+    border: 2px solid lightgray;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.headline h1:hover{
+    color: #47c117;
+    cursor: pointer;
+}
