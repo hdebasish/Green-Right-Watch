@@ -79,17 +79,25 @@
     position: relative;
 }
 
-.heroimage {
-
+.heroimagecontainer{
     background-color: black;
 }
 
-.heroimage img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    opacity: 0.3;
+.heroimage {
+    
+    
+      /*  this is where the magic happens:  */
+  background-image: url("cover.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  /* dimensions are important, ensure it is tall enough to scroll */ 
+  height: 80vh;
+  opacity: 0.3;
+    
 }
+
 
 .herocontent {
     display: flex;
