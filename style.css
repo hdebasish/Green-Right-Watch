@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
 
 
@@ -27,8 +27,6 @@
     /* margin-right: 0px; */
     list-style-type: none;
     cursor: pointer;
-
-
 }
 
 
@@ -41,8 +39,8 @@
 
 
 .menuitems span {
-    font-size: 23px;
-    margin-right: 50px;
+    font-size: 17px;
+    margin-right: 30px;
 }
 
 .support {
@@ -53,23 +51,43 @@
 
 .support span {
     color: green;
-    font-size: 23px;
-    margin-right: 50px;
+    font-size: 17px;
+    margin-right: 30px;
 }
 
 .support span:hover {
     color: gray;
 }
 
-.img-container img {
+.red-dot {
+    height: 7px;
+    width: 7px;
+    top: 14%;
+    right: 3%;
+    position: absolute;
+    background-color: #ff5757;
+    border-radius: 50%;
+}
 
-
-    height: 125px;
+.green-dot {
+    top: 25%;
+    right: 3%;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    background-color: #c1ff72;
+    border-radius: 50%;
 
 }
 
+.img-container img {
+
+    padding: 10px;
+    height: 50px;
+}
+
 .img-container {
-    margin-left: 50px;
+    position: relative;
 }
 
 
@@ -79,36 +97,45 @@
     position: relative;
 }
 
-.heroimagecontainer{
+.heroimagecontainer {
     background-color: black;
 }
 
 .heroimage {
-    
-    
-      /*  this is where the magic happens:  */
-  background-image: url("cover.JPG");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 
-  /* dimensions are important, ensure it is tall enough to scroll */ 
-  height: 80vh;
-  opacity: 0.3;
-    
+
+    /*  this is where the magic happens:  */
+    background-image: url("cover.JPG");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* dimensions are important, ensure it is tall enough to scroll */
+    height: 60vh;
+    opacity: 0.3;
+
 }
 
+
+
+.herocontent-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .herocontent {
-    display: flex;
-    flex-flow: column wrap;
-    width: 800px;
-    position: absolute;
-    top: 15%;
-    left: 20%;
+    width: 50%;
 }
 
-.herocontent div{
+
+
+.herocontent div {
     margin-bottom: 2vh;
 }
 
@@ -149,7 +176,7 @@
 
 .herobutton {
     margin-top: 2vh;
-    font-size: larger;
+    font-size: medium;
     background-color: transparent;
     border: none;
     border: 2px solid;
@@ -161,8 +188,6 @@
 .herobutton:hover {
     background-color: #47c117;
     border: none;
-    transition: 500ms;
-
 }
 
 
@@ -192,13 +217,6 @@
     cursor: pointer;
 }
 
-.contents {
-    margin: auto;
-    /* margin-top: 15%; */
-    width: 100%;
-
-}
-
 .category {
     display: flex;
     justify-content: space-evenly;
@@ -214,28 +232,34 @@
     cursor: pointer;
 }
 
-.wrappercategory {
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: rgb(247, 255, 243);
+.wrapperSubscribe {
+    background-color: #273028;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 17px;
+
 }
+
+.contents {
+    margin: auto;
+    /* margin-top: 15%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 255, 243);
+
+}
+
 
 .articles {
-    margin: auto;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+    padding: 30px;
 }
 
-.articles:nth-of-type(odd) {
-    background-color: rgb(247, 255, 243);
-}
 
-.articles:nth-of-type(even) {
-    background-color: white;
-}
 
 
 
@@ -245,6 +269,10 @@
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.heading {
+    font-size: 2rem;
 }
 
 .articleimage {
@@ -315,4 +343,154 @@ span {
 .headline h1:hover {
     color: #47c117;
     cursor: pointer;
+}
+
+.input-group-subscribe {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.input-subscribe {
+    min-height: 50px;
+    max-width: 300px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #47c117;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.button-subscribe {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    background-color: #47c117;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.button-subscribe:hover {
+    background-color: #3ca413;
+}
+
+.input-subscribe:focus,
+.input-subscribe:focus-visible {
+    border-color: #3ca413;
+    outline: none;
+}
+
+
+.burger-wrapper{
+    display: none;
+    padding: 20px;
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #3ca413;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
+  .burger-menu{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .burger-menu li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+
+
+.burger-menu li:hover {
+    background-color: #3ca413;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .menu{
+        display: none;
+    }
+    .burger-wrapper{
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .herocontent {
+        width: 80%;
+    }
+    
 }
